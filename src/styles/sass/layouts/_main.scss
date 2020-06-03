@@ -1,0 +1,155 @@
+@import '../base/backgrounds';
+@import '../fonts/fonts';
+@import '../base/colors';
+@import '../components/buttons';
+
+main {
+  margin: 0 auto;
+  max-width: 1440px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .weather-wrapper {
+    width: 60%;
+
+    .location-name {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 54px;
+
+      /* identical to box height */
+      text-transform: uppercase;
+
+      color: #ffffff;
+      text-shadow: black 1px 1px 0px;
+    }
+
+    .current-time {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+
+      color: #ffffff;
+      text-shadow: black 1px 1px 0px;
+    }
+
+    .current-weather {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .temperature {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 250px;
+        line-height: 373px;
+
+        /* identical to box height */
+        text-transform: uppercase;
+
+        color: #ffffff;
+        text-shadow: black 1px 1px 0px;
+
+        z-index: 5;
+      }
+
+      .current-weather-icon {
+        position: absolute;
+        top: 0%;
+      }
+
+      .weather-description {
+        margin-top: 100px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 37px;
+
+        /* or 168% */
+        text-transform: uppercase;
+
+        color: #ffffff;
+        text-shadow: black 1px 1px 0px;
+      }
+    }
+
+    .future-weather {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 27px;
+
+      /* identical to box height */
+      text-transform: uppercase;
+
+      color: #ffffff;
+      text-shadow: black 1px 1px 0px;
+
+      .next-day-weather {
+        display: flex;
+        position: relative;
+        width: 200px;
+
+        .next-day-weather-temperature {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 80px;
+          line-height: 98px;
+          text-transform: uppercase;
+
+          color: #ffffff;
+          text-shadow: black 1px 1px 0px;
+
+          z-index: 5;
+        }
+
+        .next-day-weather-icon {
+          position: absolute;
+          width: 50%;
+          right: 1%;
+        }
+      }
+    }
+  }
+
+  .position-wrapper {
+    width: 30%;
+    min-width: 300px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+
+    /* or 150% */
+    text-align: right;
+    text-transform: capitalize;
+
+    color: #ffffff;
+    text-shadow: black 1px 1px 0px;
+
+    .map {
+      margin-left: auto;
+      height: 300px;
+      width: 300px;
+
+      clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 100%, 90% 85%, 0 85%);
+      border-radius: 10px;
+    }
+  }
+}

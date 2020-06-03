@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/5eac5a3e80.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="options">
+          <span class="refresh">
+            <i class="fa fa-refresh fa-3" aria-hidden="true"></i>
+          </span>
+          <ul class="languages">
+            <li class="current">en</li>
+            <li class="disable">en</li>
+            <li class="disable">ru</li>
+            <li class="disable">by</li>
+          </ul>
+          <div class="degrees">
+            <div class="degrees-f">F</div>
+            <div class="degrees-c selected">C</div>
+          </div>
+        </div>
+        <div class="search-form">
+          <input
+            class="search-input"
+            type="text"
+            name="input"
+            placeholder="Search city"
+          />
+          <span class="microphone"></span>
+          <div class="search-button">
+            SEARCH
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="weather-wrapper">
+          <div class="location-name"></div>
+          <div class="current-time"><span class="timer"></span></div>
+          <div class="current-weather">
+            <div class="temperature"></div>
+            <img class="current-weather-icon" src="" alt="">
+            <div class="weather-description">
+              <div class="weather-type"></div>
+              <div class="weather-feel"><span></span></div>
+              <div class="weather-wind"><span></span></div>
+              <div class="weather-humidity"><span></span></div>
+            </div>
+          </div>
+          <div class="future-weather">
+            <div class="next-day day-plus-1">
+              <div class="next-day-item">
+                <div class="next-day-name"></div>
+                <div class="next-day-weather">
+                  <div class="next-day-weather-temperature"></div>
+                  <img class="next-day-weather-icon"></img>
+                </div>
+              </div>
+            </div>
+            <div class="next-day day-plus-2">
+              <div class="next-day-item">
+                <div class="next-day-name"></div>
+                <div class="next-day-weather">
+                  <div class="next-day-weather-temperature"></div>
+                  <img class="next-day-weather-icon"></img>
+                </div>
+              </div>
+            </div>
+            <div class="next-day day-plus-3">
+              <div class="next-day-item">
+                <div class="next-day-name"></div>
+                <div class="next-day-weather">
+                  <div class="next-day-weather-temperature"></div>
+                  <img class="next-day-weather-icon"></img>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="position-wrapper">
+          <div class="map" id="map"></div>
+          <div class="latitude"><span></span></div>
+          <div class="longtitude"><span></span></div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

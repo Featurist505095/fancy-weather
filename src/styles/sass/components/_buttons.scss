@@ -1,0 +1,19 @@
+@import '../fonts/fonts';
+
+%search-button {
+  @extend %font-buttons;
+
+  box-sizing: border-box;
+  height: 35px;
+  width: 23%;
+}
+
+%keyboard-button {
+  height: 35px;
+  width: 50px;
+}
+
+%close-button {
+  display: inline;
+  cursor: pointer;
+}
